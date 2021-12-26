@@ -3,16 +3,17 @@ import ImgSlider from "./ImgSlider";
 import styled from "styled-components";
 import Viewers from "./Viewers";
 import Movie from "./Movie";
-import db from "../firebase";
+import { Outlet, Link } from "react-router-dom";
+// import db from "../firebase";
 
 function Home() {
-  useEffect(() => {
-    db.collection("movies").onSnapshot((snapshot) => {
-      let tempMovies = snapshot.docs.map((doc) => {
-        return { id: doc.id, ...doc.data() };
-      });
-    });
-  }, []);
+  // useEffect(() => {
+  //   db.collection("movies").onSnapshot((snapshot) => {
+  //     let tempMovies = snapshot.docs.map((doc) => {
+  //       return { id: doc.id, ...doc.data() };
+  //     });
+  //   });
+  // }, []);
   return (
     <Container>
       <ImgSlider />

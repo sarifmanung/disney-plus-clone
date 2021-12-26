@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { Outlet, Link } from "react-router-dom";
+
 
 function Movie() {
   return (
