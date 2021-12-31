@@ -1,24 +1,62 @@
 import React from "react";
 import styled from "styled-components";
-import { Outlet, Link } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 function Movie() {
   return (
     <Container>
       <h4>Recommended for You</h4>
       <Content>
+        <Link to="/Detail">
+          {" "}
+          <Wrap>
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1019/1091019-v-86b6f6ecbf01" />
+          </Wrap>
+        </Link>
+        <Link to="/Detail">
+          <Wrap>
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/351/1090351-v-d5e020e85546" />
+          </Wrap>
+        </Link>
+        <Link to="/Detail">
+          <Wrap>
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3129/1063129-v-3af2c28814b5" />
+          </Wrap>
+        </Link>
+        <Link to="/Detail">
+          <Wrap>
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3181/1063181-v-6314df9285fd" />
+          </Wrap>
+        </Link>
+      </Content>
+      <h4>Disney+Originals</h4>
+      <Content>
         <Wrap>
-          <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1019/1091019-v-86b6f6ecbf01" />
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5703/1095703-v-991745cb8efd" />
+        </Wrap>
+        <Wrap>
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3319/1083319-v-917cb2f16fc8" />
+        </Wrap>
+        <Wrap>
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5887/1085887-v-ff820302bf78" />
         </Wrap>
         <Wrap>
           <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/351/1090351-v-d5e020e85546" />
         </Wrap>
+      </Content>
+      <h4>Spy Collection</h4>
+      <Content>
         <Wrap>
-          <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3129/1063129-v-3af2c28814b5" />
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3409/943409-v" />
         </Wrap>
         <Wrap>
-          <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3181/1063181-v-6314df9285fd" />
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_1x/sources/r1/cms/prod/3237/943237-v" />
+        </Wrap>
+        <Wrap>
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6229/1016229-v-de414aca9d14" />
+        </Wrap>
+        <Wrap>
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/819/940819-v" />
         </Wrap>
       </Content>
     </Container>
@@ -43,6 +81,6 @@ const Wrap = styled.div`
     object-fit: cover;
   }
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.08);
   }
 `;
