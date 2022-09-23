@@ -4,7 +4,7 @@ import styled from "styled-components";
 function Login() {
   return (
     <Container>
-      
+
       <CTA>
         <CTALogoOne src="images/cta-logo-one.svg" />
         <SignUp>GET ALL THERE</SignUp>
